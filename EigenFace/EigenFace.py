@@ -91,7 +91,7 @@ def createNewFace(*args):
 
 def resetSliderValues(*args):
     for i in range(0, NUM_EIGEN_FACES):
-        cv2.setTrackbarPos("Weight" + str(i), "Trackbars", MAX_SLIDER_VALUE / 2)
+        cv2.setTrackbarPos("Weight" + str(i), "Trackbars", MAX_SLIDER_VALUE // 2)
     createNewFace()
 
 
